@@ -136,7 +136,6 @@ if "matches" in st.session_state and st.session_state.matches:
             if c5.button("AI-ANALYS", key=f"btn_{m['id']}"):
                 st.session_state.active_match = {"name": f"{m['home_team']} vs {m['away_team']}", "odds": f"1:{o1}, X:{ox}, 2:{o2}"}
 
-# --- 8. AI ANALYS ---
 if "active_match" in st.session_state:
     st.divider()
     am = st.session_state.active_match
